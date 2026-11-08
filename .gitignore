@@ -1,0 +1,9 @@
+.private/
+.wrangler/
+node_modules/
+.env*
+.dev.vars*
+*.shortcut
+*.private.*
+__pycache__/
+.DS_Store

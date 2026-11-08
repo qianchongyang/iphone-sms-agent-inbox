@@ -1,0 +1,10 @@
+{
+  "name": "iphone-sms-inbox",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-11-08",
+  "workers_dev": false,
+  "routes": [{"pattern": "otp.example.com", "custom_domain": true}],
+  "durable_objects": {"bindings": [{"name": "INBOX", "class_name": "OtpInbox"}]},
+  "migrations": [{"tag": "v1", "new_sqlite_classes": ["OtpInbox"]}],
+  "observability": {"enabled": false}
+}
